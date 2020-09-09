@@ -1,5 +1,5 @@
 //
-//  CharacterViewCell.swift
+//  CharacterListTableViewCell.swift
 //  rickMorty
 //
 //  Created by Georgi Malkhasyan on 9/8/20.
@@ -7,43 +7,22 @@
 //
 
 import UIKit
+import Foundation
 
-class CharacterViewCell: UITableViewCell {
-    
-    @IBOutlet weak var imageCell: UIImageView!
-    @IBOutlet weak var nameCell: UILabel!
-    @IBOutlet weak var especiesCell: UILabel!
-    @IBOutlet weak var genderCell: UILabel!
-    @IBOutlet weak var statusCell: UILabel!
+class CharacterListTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var card: UIView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        card.layer.cornerRadius = 18
+    func setName(with name: String?) {
+        textLabel?.text = name
     }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
-    func configure(for characterInfo: Character) {
-        self.nameCell.text = characterInfo.name
-        self.genderCell.text = characterInfo.gender
-        self.statusCell.text = characterInfo.status
-        if self.statusCell.text == "Alive" {
-            self.statusCell.backgroundColor = .green
-        } else if self.statusCell.text == "Dead" {
-            self.statusCell.backgroundColor = .red
-        } else {
-            self.statusCell.backgroundColor = .gray
+    func setImage(with data: Data?) {
+        if let data = data{
+            imageView?.image = UIImage(data: data)
+            self.layoutSubviews()
         }
-
-        self.imageCell.loadImage(fromURL: characterInfo.image)
+        DispatchQueue.main.async {
+            self.textLabel?.textColor = UIColor.red
+        }
     }
+    
 }

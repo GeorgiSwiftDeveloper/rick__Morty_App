@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//MARK: Location data structure
 struct Location: Codable {
     var idl: Int
     var namel: String

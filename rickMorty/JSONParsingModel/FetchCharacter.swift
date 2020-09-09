@@ -1,5 +1,5 @@
 //
-//  FetchEpisode.swift
+//  FetchCharacter.swift
 //  rickMorty
 //
 //  Created by Georgi Malkhasyan on 9/8/20.
