@@ -31,7 +31,26 @@
 		6A10125D2508AEAC00A28877 /* CharacterListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A10125C2508AEAC00A28877 /* CharacterListPresenter.swift */; };
 		6A10125F2508AEE200A28877 /* CharacterListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A10125E2508AEE200A28877 /* CharacterListConfigurator.swift */; };
 		6A1012612508AEF800A28877 /* CharacterListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1012602508AEF800A28877 /* CharacterListRouter.swift */; };
+		6ABA08342509407700453C21 /* rickMortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA08332509407700453C21 /* rickMortyUITests.swift */; };
+		6ABA08422509408600453C21 /* rickMortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA08412509408600453C21 /* rickMortyTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6ABA08362509407700453C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A1011B725086F4D00A28877 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A1011BE25086F4D00A28877;
+			remoteInfo = rickMorty;
+		};
+		6ABA08442509408600453C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A1011B725086F4D00A28877 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A1011BE25086F4D00A28877;
+			remoteInfo = rickMorty;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6A1011BF25086F4D00A28877 /* rickMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rickMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,10 +79,30 @@
 		6A10125C2508AEAC00A28877 /* CharacterListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListPresenter.swift; sourceTree = "<group>"; };
 		6A10125E2508AEE200A28877 /* CharacterListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListConfigurator.swift; sourceTree = "<group>"; };
 		6A1012602508AEF800A28877 /* CharacterListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRouter.swift; sourceTree = "<group>"; };
+		6ABA08312509407700453C21 /* rickMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rickMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ABA08332509407700453C21 /* rickMortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rickMortyUITests.swift; sourceTree = "<group>"; };
+		6ABA08352509407700453C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ABA083F2509408600453C21 /* rickMortyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rickMortyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ABA08412509408600453C21 /* rickMortyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rickMortyTests.swift; sourceTree = "<group>"; };
+		6ABA08432509408600453C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6A1011BC25086F4D00A28877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ABA082E2509407700453C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ABA083C2509408600453C21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				6A1011C125086F4D00A28877 /* rickMorty */,
+				6ABA08322509407700453C21 /* rickMortyUITests */,
+				6ABA08402509408600453C21 /* rickMortyTests */,
 				6A1011C025086F4D00A28877 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				6A1011BF25086F4D00A28877 /* rickMorty.app */,
+				6ABA08312509407700453C21 /* rickMortyUITests.xctest */,
+				6ABA083F2509408600453C21 /* rickMortyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +212,24 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		6ABA08322509407700453C21 /* rickMortyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6ABA08332509407700453C21 /* rickMortyUITests.swift */,
+				6ABA08352509407700453C21 /* Info.plist */,
+			);
+			path = rickMortyUITests;
+			sourceTree = "<group>";
+		};
+		6ABA08402509408600453C21 /* rickMortyTests */ = {
+			isa = PBXGroup;
+			children = (
+				6ABA08412509408600453C21 /* rickMortyTests.swift */,
+				6ABA08432509408600453C21 /* Info.plist */,
+			);
+			path = rickMortyTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,6 +250,42 @@
 			productReference = 6A1011BF25086F4D00A28877 /* rickMorty.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6ABA08302509407700453C21 /* rickMortyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ABA083A2509407700453C21 /* Build configuration list for PBXNativeTarget "rickMortyUITests" */;
+			buildPhases = (
+				6ABA082D2509407700453C21 /* Sources */,
+				6ABA082E2509407700453C21 /* Frameworks */,
+				6ABA082F2509407700453C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ABA08372509407700453C21 /* PBXTargetDependency */,
+			);
+			name = rickMortyUITests;
+			productName = rickMortyUITests;
+			productReference = 6ABA08312509407700453C21 /* rickMortyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6ABA083E2509408600453C21 /* rickMortyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ABA08462509408600453C21 /* Build configuration list for PBXNativeTarget "rickMortyTests" */;
+			buildPhases = (
+				6ABA083B2509408600453C21 /* Sources */,
+				6ABA083C2509408600453C21 /* Frameworks */,
+				6ABA083D2509408600453C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ABA08452509408600453C21 /* PBXTargetDependency */,
+			);
+			name = rickMortyTests;
+			productName = rickMortyTests;
+			productReference = 6ABA083F2509408600453C21 /* rickMortyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +298,14 @@
 				TargetAttributes = {
 					6A1011BE25086F4D00A28877 = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					6ABA08302509407700453C21 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 6A1011BE25086F4D00A28877;
+					};
+					6ABA083E2509408600453C21 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 6A1011BE25086F4D00A28877;
 					};
 				};
 			};
@@ -218,6 +323,8 @@
 			projectRoot = "";
 			targets = (
 				6A1011BE25086F4D00A28877 /* rickMorty */,
+				6ABA08302509407700453C21 /* rickMortyUITests */,
+				6ABA083E2509408600453C21 /* rickMortyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,6 +337,20 @@
 				6A1011D225086F4F00A28877 /* LaunchScreen.storyboard in Resources */,
 				6A1011CF25086F4F00A28877 /* Assets.xcassets in Resources */,
 				6A1012472508709600A28877 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ABA082F2509407700453C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ABA083D2509408600453C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +385,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6ABA082D2509407700453C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ABA08342509407700453C21 /* rickMortyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ABA083B2509408600453C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ABA08422509408600453C21 /* rickMortyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6ABA08372509407700453C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A1011BE25086F4D00A28877 /* rickMorty */;
+			targetProxy = 6ABA08362509407700453C21 /* PBXContainerItemProxy */;
+		};
+		6ABA08452509408600453C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A1011BE25086F4D00A28877 /* rickMorty */;
+			targetProxy = 6ABA08442509408600453C21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6A1011D025086F4F00A28877 /* LaunchScreen.storyboard */ = {
@@ -428,6 +578,84 @@
 			};
 			name = Release;
 		};
+		6ABA08382509407700453C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CVH85UHVWD;
+				INFOPLIST_FILE = rickMortyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = georgi.malkhasyan.HealthyPost.rickMortyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rickMorty;
+			};
+			name = Debug;
+		};
+		6ABA08392509407700453C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CVH85UHVWD;
+				INFOPLIST_FILE = rickMortyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = georgi.malkhasyan.HealthyPost.rickMortyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rickMorty;
+			};
+			name = Release;
+		};
+		6ABA08472509408600453C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CVH85UHVWD;
+				INFOPLIST_FILE = rickMortyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = georgi.malkhasyan.HealthyPost.rickMortyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rickMorty.app/rickMorty";
+			};
+			name = Debug;
+		};
+		6ABA08482509408600453C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CVH85UHVWD;
+				INFOPLIST_FILE = rickMortyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = georgi.malkhasyan.HealthyPost.rickMortyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rickMorty.app/rickMorty";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +673,24 @@
 			buildConfigurations = (
 				6A1011D725086F4F00A28877 /* Debug */,
 				6A1011D825086F4F00A28877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ABA083A2509407700453C21 /* Build configuration list for PBXNativeTarget "rickMortyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ABA08382509407700453C21 /* Debug */,
+				6ABA08392509407700453C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ABA08462509408600453C21 /* Build configuration list for PBXNativeTarget "rickMortyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ABA08472509408600453C21 /* Debug */,
+				6ABA08482509408600453C21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
