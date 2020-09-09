@@ -28,6 +28,7 @@ class CharacterListViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        self.view.accessibilityIdentifier = "Character"
         tableView.register(cellClass, forCellReuseIdentifier: cellReuseId)
         configurator.configure(with: self)
         presenter.viewDidLoad()
