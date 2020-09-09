@@ -163,7 +163,7 @@
             </objects>
             <point key="canvasLocation" x="196" y="615"/>
         </scene>
-        <!--Item-->
+        <!--Characters-->
         <scene sceneID="wOB-PZ-cmR">
             <objects>
                 <viewController id="x7g-QZ-sXQ" customClass="CharacterListViewController" customModule="rickMorty" customModuleProvider="target" sceneMemberID="viewController">
@@ -201,7 +201,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ULi-of-efZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="person.circle.fill" catalog="system" id="CKN-Im-I0t"/>
+                    <tabBarItem key="tabBarItem" title="Characters" image="person.circle.fill" catalog="system" id="CKN-Im-I0t"/>
                     <navigationItem key="navigationItem" id="e8b-jZ-7Lj"/>
                     <connections>
                         <outlet property="tableView" destination="YbE-SS-zRj" id="jkb-d5-AYq"/>
@@ -305,6 +305,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="b7q-l4-58s"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xeU-GX-eqE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
