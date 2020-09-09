@@ -32,9 +32,11 @@ class rickMortyUITests: XCTestCase {
     func testCharacterViewController_Items() {
         app.launch()
         app.tabBars.buttons.element(boundBy: 0).tap()
-        XCTAssertTrue(app.isCharacterViewControllers, "MyLibraryView is not available when tabbar clicked")
+        XCTAssertTrue(app.isCharacterViewControllers, "Character is not available when tabbar clicked")
         app.tabBars.buttons.element(boundBy: 1).tap()
+        XCTAssertTrue(app.isLocationDisplay, "Location is not available when tabbar clicked")
         app.tabBars.buttons.element(boundBy: 2).tap()
+         XCTAssertTrue(app.isDisplayEpisode, "Episode is not available when tabbar clicked")
     }
     
 }
