@@ -32,7 +32,7 @@ class CharacterListViewController: UIViewController {
         configurator.configure(with: self)
         presenter.viewDidLoad()
     }
-    
+    //MARK: Destination to DetailViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            if segue.identifier == detailSegue {
                guard let character = sender as? Character else { return }
@@ -46,6 +46,9 @@ class CharacterListViewController: UIViewController {
 
 extension CharacterListViewController: CharacterListViewProtocol{
     func reloadData() {
+        
+        
+        //MARK: Update UI in Main traide
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
@@ -74,7 +77,6 @@ extension CharacterListViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print(indexPath.row)
         presenter.showCharacterDetails(for: indexPath.row)
     }
     
